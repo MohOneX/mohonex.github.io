@@ -1,0 +1,116 @@
+.approach {
+  background: #182e2e;
+  color: #f2f5ee;
+}
+.approach__intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+.approach .eyebrow {
+  align-self: start;
+  color: #c6dacb;
+  padding-top: 9px;
+}
+.approach .eyebrow > span {
+  color: #a9c5b3;
+}
+.approach h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.65rem);
+  letter-spacing: -0.045em;
+  line-height: 1.28;
+}
+.approach h2 span {
+  color: #a8c6b1;
+}
+.approach__intro > div > p {
+  font-size: 13px;
+  max-width: 590px;
+  color: #bbcbc4;
+  line-height: 1.95;
+  margin-top: 24px;
+}
+.approach__principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+  margin-top: 66px;
+}
+.approach__principles article {
+  border-top: 1px solid #ffffff26;
+  padding-top: 24px;
+}
+.approach__number {
+  display: block;
+  font:
+    10px ui-monospace,
+    monospace;
+  color: #a8c6b1;
+  margin-bottom: 27px;
+}
+.approach__principles h3 {
+  font-size: 18px;
+  letter-spacing: -0.03em;
+}
+.approach__principles p {
+  color: #bbcbc4;
+  font-size: 12px;
+  line-height: 1.9;
+  margin-top: 16px;
+  max-width: 300px;
+}
+.approach__footer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-top: 1px solid #ffffff26;
+  padding-top: 32px;
+  margin-top: 62px;
+}
+.approach__asterisk {
+  font-size: 34px;
+  line-height: 1;
+  color: #bcdaa5;
+}
+.approach__footer p {
+  font-size: 13px;
+}
+.approach__footer > span:last-child {
+  margin-left: auto;
+  font-size: 10px;
+  color: #bbcbc4;
+}
+@media (max-width: 900px) {
+  .approach__intro {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .approach__principles {
+    gap: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .approach__principles {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 38px;
+  }
+  .approach__number {
+    margin-bottom: 14px;
+  }
+  .approach__principles p {
+    max-width: 100%;
+  }
+  .approach__footer {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .approach__footer > span:last-child {
+    margin-left: 46px;
+    width: 100%;
+  }
+  .approach__footer p {
+    font-size: 11px;
+  }
+}

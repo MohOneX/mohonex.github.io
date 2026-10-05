@@ -1,0 +1,6 @@
+.site {
+  overflow-x: clip;
+}
+main {
+  min-height: 100vh;
+}
